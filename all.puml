@@ -8,10 +8,16 @@ hide empty members
 abstract class TheAll <<open>> {
   .. Be-Ness ..
   (Abstract Space x Abstract Motion) ^ Absolute
+  .. three aspects of the Absolute ..
+  Abstract Space
+  Abstract Motion
+  Duration
 }
 note right of TheAll
-  How the formula is expressed
-  is open. Dlozi to settle.
+  The formula names two of the
+  three aspects. Where Duration
+  sits in it is open, as is how
+  any of it is expressed here.
 end note
 
 abstract class Monad <<deferred>>

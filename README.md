@@ -27,7 +27,7 @@ Inner being is reflected in reality.
 
 ## Metaphor is not ontology
 
-The believer, and the paint and layers image, explain how the ontology behaves. They are narrative devices. They are never modelled as classes and never treated as ontology. They live in `narrative_devices` in the core preamble.
+The believer, the paint and layers image, and the Great Breath explain how the ontology behaves. They are narrative devices. They are never modelled as classes and never treated as ontology. They live in `narrative_devices` in the core preamble.
 
 ## Core before domain
 
@@ -35,7 +35,7 @@ A domain never redefines a core class; it uses it. If a domain needs a new core 
 
 ## Open
 
-Be-Ness and how the formula is expressed. Where Mental sits on the ladder. Whether Self creating Fields is intended. Whether anything other than a Creator has a reflection. YCYOR.
+Be-Ness, and where Duration sits in the formula, given that the Absolute has three aspects: Abstract Space, Abstract Motion and Duration. Where Mental sits on the ladder. Whether Self creating Fields is intended. Whether anything other than a Creator has a reflection. YCYOR.
 
 ## Working with this
 
