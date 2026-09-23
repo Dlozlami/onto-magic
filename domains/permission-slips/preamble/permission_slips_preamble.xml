@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permission_slips_preamble version="3.0" date="2026-09-23" supersedes="2.0">
+
+  <meta>
+    <author>Dlozi Lloyd Mthethwa</author>
+    <title>Permission Slips: Domain Preamble</title>
+    <requires preamble="onto_magic_preamble" version="1.0">core/onto_magic_preamble.xml</requires>
+    <scope>Permission slips are one domain of onto-magic: an example of what you can do when YCYOR. Everything about beliefs, amplitude, Allowance, Field, Reflection and the ladder lives in the core preamble and is not restated here.</scope>
+    <status_markers>
+      <marker name="settled">Decided by Dlozi. Do not reopen, soften or add caveats.</marker>
+      <marker name="open">Still being worked out. Do not fill in. Ask Dlozi.</marker>
+      <marker name="deferred">Parked for later by Dlozi's choice.</marker>
+      <marker name="critical">Must be honoured in every output.</marker>
+    </status_markers>
+    <authority status="critical">Dlozi is one of the foremost experts on permission slips. This is her framework. The AI does not substitute its own theory of permission slips, spells or manifestation.</authority>
+    <changes_from_v2>The ontology moved out to core/onto_magic_preamble.xml: the ladder, the classes, how reality works, the beliefs and allowing concepts, and both narrative devices. What remains here is the chain, permission slips themselves, and the domain's open work.</changes_from_v2>
+  </meta>
+
+  <the_chain status="settled">
+    <statement>To explain permission slips, you have to explain YCYOR. To explain YCYOR, you have to explain the Art of Allowing. To explain the Art of Allowing, you have to explain beliefs. The whole chain is necessary to explain permission slips.</statement>
+    <teaching_order>
+      <step order="1">Beliefs</step>
+      <step order="2">The Art of Allowing</step>
+      <step order="3">YCYOR</step>
+      <step order="4">Permission slips</step>
+    </teaching_order>
+    <note>The first three links are core. This domain covers the fourth.</note>
+  </the_chain>
+
+  <concepts>
+    <concept id="permission_slips" status="open">
+      <name>Permission Slips</name>
+      <definition status="settled">Access cards to parts outside the usual allowance.</definition>
+      <needs_restating status="critical">This definition was given while "the Field" meant the set of beliefs. In the ontology, the set of beliefs is the Allowance and the Field is the surface reflected onto. What a permission slip gives access to must be restated in those terms before it is used in any teaching or writing.</needs_restating>
+      <prior_positions status="settled" source="Dlozi's published and working material">
+        <position>Permission slips are beliefs first, long before they take form.</position>
+        <position>Tools hold no power. They give access to power you already have.</position>
+        <position>Permission slips are the UI; spirit is the backend.</position>
+        <position>The teaching is the belief-to-form pipeline, not the objects.</position>
+        <position>Sovereignty: you are the source.</position>
+      </prior_positions>
+    </concept>
+  </concepts>
+
+  <open_items>
+    <item id="permission_slip_restatement" status="critical">See concept permission_slips: the definition needs restating in the ontology's terms.</item>
+    <item id="spells" status="open">Where spells sit in the framework. Nothing about spells is Dlozi's position yet.</item>
+    <item id="spells_for_others" status="open">How spells cast on or for other people fit the framework. Raised, not answered.</item>
+    <item id="published_sources_ingested" status="open">The published pieces below have not been read into this file.</item>
+    <item id="domain_classes" status="open">Whether permission slips need classes of their own, or are a use of core classes only.</item>
+  </open_items>
+
+  <deferred_items>
+    <item id="believer_image" status="deferred">A visual of the believer, for narrative use. Dlozi: "we will create it last."</item>
+  </deferred_items>
+
+  <working_rules>
+    <rule id="inherit_core" status="critical">Read the core preamble first. Never redefine a core class here, and never explain beliefs, allowing or reality from this file alone.</rule>
+    <rule id="chain_order" status="settled">When explaining permission slips to anyone new, build from beliefs upward in the teaching order.</rule>
+  </working_rules>
+
+  <sources>
+    <source type="published" title="Permission Slips">https://medium.com/@dlozi.mthethwa/permission-slips-50c9a9d94305</source>
+    <source type="published" title="A Beginner's Guide to Readings">https://medium.com/@dlozi.mthethwa/a-beginners-guide-to-readings-3b6259f4afb2</source>
+    <source type="published" title="Allow Yourself to Choose a Loving Identity">https://medium.com/@dlozi.mthethwa/allow-yourself-to-choose-a-loving-identity-b6325fcd3b34</source>
+  </sources>
+
+</permission_slips_preamble>

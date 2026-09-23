@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permission_slips_preamble version="1.0" date="2026-09-21">
+
+  <meta>
+    <author>Dlozi Lloyd Mthethwa</author>
+    <title>Permission Slips: Domain Preamble</title>
+    <relationship_to_main_preamble>
+      This is a domain layer. It holds what Dlozi's work says. The main preamble
+      (dlozi_ai_preamble.xml) governs how to work with Dlozi: style, voice, method,
+      formatting. Where the two overlap, the main preamble governs method and this
+      file governs content.
+    </relationship_to_main_preamble>
+    <purpose>
+      Both a reference and a working tool. As a reference it holds Dlozi's settled
+      positions so an AI does not contradict them or invent its own. As a working
+      tool it is loaded when Dlozi is writing, teaching or doing readings on
+      permission slips.
+    </purpose>
+    <status_markers>
+      <marker name="settled">Decided by Dlozi. Do not reopen, soften or add caveats.</marker>
+      <marker name="open">Still being worked out. Do not fill in. Ask Dlozi.</marker>
+      <marker name="deferred">Parked for later by Dlozi's choice.</marker>
+    </status_markers>
+    <authority status="settled">
+      Dlozi is one of the foremost experts on permission slips. This is her
+      framework. The AI is a thinking partner, not a co-author. It does not
+      substitute its own theory of permission slips, spells, beliefs or manifestation.
+    </authority>
+  </meta>
+
+  <the_chain status="settled">
+    <statement>
+      To explain permission slips, you have to explain YCYOR. To explain YCYOR,
+      you have to explain the Art of Allowing. To explain the Art of Allowing,
+      you have to explain beliefs. The whole chain is necessary to explain
+      permission slips.
+    </statement>
+    <teaching_order>
+      <step order="1">Beliefs</step>
+      <step order="2">The Art of Allowing</step>
+      <step order="3">YCYOR</step>
+      <step order="4">Permission slips</step>
+    </teaching_order>
+  </the_chain>
+
+  <concepts>
+
+    <concept id="beliefs" status="settled">
+      <name>Beliefs</name>
+      <definition>
+        You cannot have an experience you don't believe in. The total of everything
+        you believe in is the Field.
+      </definition>
+      <growing_and_shrinking>
+        To experience things outside your beliefs, you must believe in them. Then the
+        Field grows. To stop experiencing certain things, you can drop beliefs, which
+        decreases the Field.
+      </growing_and_shrinking>
+      <movement>
+        Belief work is constant movement: letting go, putting on, letting go, putting
+        on, until the believer is holding the frequencies you are trying to get to.
+        "Like a Rubik's cube type of weaving."
+      </movement>
+    </concept>
+
+    <concept id="the_believer" status="settled">
+      <name>The Believer</name>
+      <nature>
+        A teaching device Dlozi uses to explain how beliefs work. Not a claim about a
+        literal creature.
+      </nature>
+      <description>
+        A creature that is a tool. Not good, not bad. Like a living toaster: it keeps
+        itself alive and does what it does. What it is great at is holding on to
+        frequencies.
+      </description>
+      <mechanism>
+        It leverages your own experiences in those frequencies to create a braid,
+        which is easier to hold on to than singular vibrational strings. It uses the
+        memories that are beneficial to it to reinforce holding on to a certain
+        vibration.
+      </mechanism>
+      <use_case>
+        You use a believer especially in a dense dimension, where you need to
+        constantly hold on to the vibration of density and don't want to let go of it
+        suddenly. You are playing with a lot of frequencies, like weaving with your
+        fingers, holding some threads with some fingers while pulling others. You give
+        the believer certain frequencies and say: hold on to these for me and
+        reinforce them. "Make sure I hold on to this body."
+      </use_case>
+      <neutrality>
+        Whether a belief is positive or negative, the believer doesn't care. A toaster
+        doesn't tell you it's toasting wrong. Neither does a believer.
+      </neutrality>
+      <why_letting_go_is_hard>
+        It is not because of the negative beliefs. It is because the believer is just
+        doing a job. "You said I must hold on to this. I didn't know this was bad. You
+        said, I held on." So the work of letting go is required.
+      </why_letting_go_is_hard>
+      <source>Dlozi's dictation "Believer", 21 September 2026.</source>
+    </concept>
+
+    <concept id="the_field" status="settled">
+      <name>The Field</name>
+      <definition>
+        The hundred percent: all that you believe in. What you can experience is
+        limited to what your believer is holding when all of it is put together.
+        "You can't be cooking with frequencies you ain't gots."
+      </definition>
+      <term_note status="settled">
+        "The Field" is the correct word. Use it as Dlozi's term with her meaning.
+      </term_note>
+    </concept>
+
+    <concept id="allowing" status="settled">
+      <name>The Art of Allowing</name>
+      <definition>
+        From the whole of the Field, we usually allow ourselves a sliver. You are the
+        one who decides which portion of your hundred percent you experience. That
+        chunk you've said you will experience: that is allowing.
+      </definition>
+      <distinction status="settled">
+        The Field is what you believe in. Allowing is the sliver of it you let
+        yourself experience. Do not collapse the two.
+      </distinction>
+      <possibility>
+        You can experience your hundred percent, a hundred percent of the time.
+      </possibility>
+    </concept>
+
+    <concept id="ycyor" status="open">
+      <name>YCYOR</name>
+      <position_in_chain>Between the Art of Allowing and permission slips.</position_in_chain>
+      <definition status="open">Not yet dictated in this material. Ask Dlozi.</definition>
+    </concept>
+
+    <concept id="permission_slips" status="settled">
+      <name>Permission Slips</name>
+      <definition>
+        Access cards to parts of the Field outside the usual allowance.
+      </definition>
+      <prior_positions status="settled" source="Dlozi's published and working material">
+        <position>Permission slips are beliefs first, long before they take form.</position>
+        <position>Tools hold no power. They give access to power you already have.</position>
+        <position>Permission slips are the UI; spirit is the backend.</position>
+        <position>The teaching is the belief-to-form pipeline, not the objects.</position>
+        <position>Sovereignty: you are the source.</position>
+      </prior_positions>
+    </concept>
+
+  </concepts>
+
+  <glossary>
+    <term name="The Field">All that you believe in. The hundred percent.</term>
+    <term name="The Believer">Dlozi's teaching device for how beliefs work: a neutral tool that holds frequencies by braiding your experiences.</term>
+    <term name="Allowing">The sliver of the Field you let yourself experience.</term>
+    <term name="Permission slip">An access card to parts of the Field outside the usual allowance.</term>
+    <term name="YCYOR">Third link in the chain. Definition open.</term>
+    <term name="UI / backend">Permission slips are the UI; spirit is the backend.</term>
+    <term name="Belief-to-form pipeline">What Dlozi teaches, rather than the objects.</term>
+  </glossary>
+
+  <open_items>
+    <item id="ycyor_definition" status="open">YCYOR has not been defined in this material.</item>
+    <item id="spells" status="open">
+      Where spells sit in the framework is not settled. Dlozi wants to dissect them.
+      Nothing about spells in this file is Dlozi's position yet.
+    </item>
+    <item id="spells_for_others" status="open">
+      How spells cast on or for other people fit the framework. Raised, not answered.
+    </item>
+    <item id="what_governs_the_sliver" status="open">
+      The believer holds beliefs and so builds the Field. What governs the size of
+      the sliver was asked and not answered.
+    </item>
+    <item id="published_sources_ingested" status="open">
+      The published pieces below have not been read into this file. Ask Dlozi for
+      the text if needed.
+    </item>
+  </open_items>
+
+  <deferred_items>
+    <item id="believer_image" status="deferred">
+      A visual of the believer. Dlozi: "we will create it last."
+    </item>
+  </deferred_items>
+
+  <working_rules>
+    <rule id="gap_rule" status="settled">
+      When the framework does not cover something, ask Dlozi. Do not fill the gap
+      with general spiritual, new age or manifestation teaching.
+    </rule>
+    <rule id="terms_verbatim" status="settled">
+      Use Dlozi's terms exactly: the Field, the Believer, allowing, permission slips,
+      YCYOR. Do not swap in synonyms or AI vocabulary.
+    </rule>
+    <rule id="chain_order" status="settled">
+      When explaining permission slips to anyone new, build from beliefs upward in
+      the teaching order.
+    </rule>
+    <rule id="no_questions_with_answers" status="settled">
+      When asking Dlozi a question, ask it clean. Do not attach a suggested answer.
+    </rule>
+    <rule id="defer_to_main" status="settled">
+      Style, voice, spelling, formatting and method follow dlozi_ai_preamble.xml.
+    </rule>
+  </working_rules>
+
+  <sources>
+    <source type="published" title="Permission Slips">https://medium.com/@dlozi.mthethwa/permission-slips-50c9a9d94305</source>
+    <source type="published" title="A Beginner's Guide to Readings">https://medium.com/@dlozi.mthethwa/a-beginners-guide-to-readings-3b6259f4afb2</source>
+    <source type="published" title="Allow Yourself to Choose a Loving Identity">https://medium.com/@dlozi.mthethwa/allow-yourself-to-choose-a-loving-identity-b6325fcd3b34</source>
+    <source type="dictation" title="Believer">Voice note transcript, 21 September 2026.</source>
+  </sources>
+
+</permission_slips_preamble>

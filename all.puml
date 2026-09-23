@@ -1,5 +1,113 @@
-@startuml
+@startuml all
+title Onto-Magic: the core ontology (v1.0, 23 September 2026)
 
-abstract class Beness as "THE ALL"
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+hide empty members
+
+abstract class TheAll <<open>> {
+  .. Be-Ness ..
+  (Abstract Space x Abstract Motion) ^ Absolute
+}
+note right of TheAll
+  How the formula is expressed
+  is open. Dlozi to settle.
+end note
+
+abstract class Monad <<deferred>>
+abstract class Atmic <<deferred>>
+abstract class Buddhic <<deferred>>
+
+interface Creator {
+  + createField() : Field
+}
+note right of Creator
+  Only Creators can create Fields,
+  and by extension realities.
+end note
+
+class Soul {
+  + createField() : Field
+}
+
+class HigherSelf <<deferred>>
+
+class Self {
+  - innerBeing : Field
+  - allowance : Allowance
+  + reality : Reflection
+  + believe(b : Belief)
+  + drop() : Belief
+}
+
+class Field {
+  - maker : Creator
+}
+note bottom of Field
+  The surface a Reflection lands on.
+end note
+
+class Allowance {
+  - beliefs : Deque<Belief>
+  + push(b : Belief)
+  + pop() : Belief
+  + totalAmplitude() : int
+}
+note bottom of Allowance
+  A set of beliefs: what you
+  are allowed to experience.
+end note
+
+class Belief {
+  - frequency : Frequency
+  - amplitude : int
+  + reinforce(t : Thought)
+}
+note bottom of Belief
+  Holds one frequency unchanging.
+  Amplitude is energy, not size.
+end note
+
+class Frequency
+class Thought
+
+class Reflection {
+  - field : Field
+  - allowance : Allowance
+  + shareOf(b : Belief) : double
+}
+note bottom of Reflection
+  All beliefs present at once,
+  weighted by amplitude, composited
+  like layers. Inner being is
+  reflected in reality.
+end note
+
+interface Mental <<open>> {
+  .. mind, consciousness ..
+  .. awareness, thinking, cognition ..
+}
+note right of Mental
+  Inherited by Self from a superclass.
+  Which rung is open.
+end note
+
+TheAll <|-- Monad
+Monad <|-- Atmic
+Atmic <|-- Buddhic
+Buddhic <|-- Soul
+Creator <|.. Soul
+Soul <|-- HigherSelf
+HigherSelf <|-- Self
+
+Soul ..> Field : creates
+Self *-- Field : inner being
+Self *-- Allowance : holds
+Self *-- Reflection : reality
+Reflection --> Field : reflects onto
+Reflection --> Allowance : reflects
+Allowance o-- Belief : set of
+Belief --> Frequency : holds unchanging
+Thought ..> Belief : reinforces
 
 @enduml
