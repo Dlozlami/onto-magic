@@ -1,44 +1,80 @@
-# Onto-Magic
+# onto-magic
 
-The ontology of Dlozi Lloyd Mthethwa, and the domains that sit on it. Permission slips is the first domain: an example of what you can do when YCYOR.
+An ontology expressed as machine-readable XML, a class model, and generated reading material. The XML preambles are the source of truth; the Java and PlantUML express the same model in a form you can compile and draw; the HTML site renders the preambles for a human reader.
 
-Dlozi is the authority on this work. Nothing here is filled in on her behalf. Anything undecided is marked `open` and stays that way until she settles it.
+Author: Dlozi Lloyd Mthethwa.
 
-## Layout
+## Repository layout
 
-| Path | Holds |
+```
+onto-magic/
+├── README.md
+├── all.puml                          class diagram of the core ontology
+├── core/
+│   ├── onto_magic_preamble.xml       the ontology
+│   └── java/ontomagic/               the ontology as Java, one class per file
+├── domains/
+│   └── <domain>/                     a domain built on the core
+│       ├── README.md
+│       ├── preamble/
+│       │   ├── <domain>_preamble.xml
+│       │   └── archive/              superseded versions
+│       ├── site/                     rendered reader
+│       └── narrative/                prose and teaching material
+├── source/                           raw dictations and transcripts
+└── assets/                           images
+```
+
+## Model
+
+| Class | Role |
 |---|---|
-| `all.puml` | Class diagram of the core ontology. |
-| `core/onto_magic_preamble.xml` | The ontology. Single source of truth for what exists and how it relates. |
-| `core/java/ontomagic/` | The ontology as Java, one class per file. |
-| `domains/permission-slips/` | The permission slips domain: its own preamble, site, narrative. |
-| `source/` | Raw dictations and transcripts, untouched. |
-| `assets/` | Images. |
+| `TheAll` | Be-Ness. Top of the ladder. Open. |
+| `Monad`, `Atmic`, `Buddhic` | Rungs. Deferred. |
+| `Creator` | Interface. Creates Fields, and by extension realities. |
+| `Soul` | A Creator. |
+| `HigherSelf` | Rung between Soul and Self. |
+| `Self` | Holds an Allowance, a Field, and reality. |
+| `Belief` | Holds one frequency unchanging. Carries an amplitude. |
+| `Frequency`, `Thought` | What a belief holds, and what reinforces it. |
+| `Allowance` | A set of beliefs: what you are allowed to experience. |
+| `Field` | The surface a Reflection lands on. |
+| `Reflection` | An Allowance reflected onto a Field. |
+| `Mental` | Mind, consciousness, awareness, thinking, cognition. Placement open. |
 
-## The ontology
+Every belief in the Allowance is present at once, weighted by its amplitude, composited like layers. Raising an amplitude changes the proportions, not the contents. Reality holds references rather than copies, so a push, a pop or a reinforcement shows immediately.
 
-Self inherits the ladder: The ALL, Monad, Atmic, Buddhic, Soul, Higher Self, Self. Only Creators can create Fields, and by extension realities. Souls are Creators.
+## Status markers
 
-A **Belief** holds one frequency unchanging, and carries an **amplitude**, which is how much energy it has. Thoughts reinforce a belief and raise its amplitude. An **Allowance** is a set of beliefs: what you are allowed to experience. A **Field** is the surface a reflection lands on. A **Reflection** is an Allowance reflected onto a Field, and reality is a Reflection held by Self.
+Every item in a preamble carries one: `settled`, `open`, `deferred` or `critical`. Open items are not to be filled in by anyone but the author.
 
-Every belief is present at once, weighted by amplitude, composited like layers. Raising an amplitude adds nothing new; it shifts the mood of the whole. Nothing outside the Allowance can appear, however high an amplitude goes.
+## Usage
 
-Inner being is reflected in reality.
+The preambles are loaded as context for AI-assisted work, core first, then the domain:
 
-## Metaphor is not ontology
+```
+core/onto_magic_preamble.xml
+domains/<domain>/preamble/<domain>_preamble.xml
+```
 
-The believer, the paint and layers image, and the Great Breath explain how the ontology behaves. They are narrative devices. They are never modelled as classes and never treated as ontology. They live in `narrative_devices` in the core preamble.
+To read the ontology as a page, open `domains/<domain>/site/*.html` in a browser. It renders the embedded preambles and accepts an updated core or domain XML through the load button.
 
-## Core before domain
+To draw the class diagram:
 
-A domain never redefines a core class; it uses it. If a domain needs a new core part, that is a change to the core preamble, not a local definition.
+```bash
+plantuml all.puml
+```
 
-## Open
+To compile the model:
 
-Be-Ness, and where Duration sits in the formula, given that the Absolute has three aspects: Abstract Space, Abstract Motion and Duration. Where Mental sits on the ladder. Whether Self creating Fields is intended. Whether anything other than a Creator has a reflection. YCYOR.
+```bash
+javac -d build core/java/ontomagic/*.java
+```
 
-## Working with this
+## Versioning
 
-Load `core/onto_magic_preamble.xml`, then the preamble of whichever domain you are working in, alongside `dlozi_ai_preamble.xml`. The preambles govern content, and the main preamble governs style and method. When the ontology does not cover something, ask. Do not fill the gap with general spiritual or manifestation teaching.
+A preamble carries `version` and `date` on its root element. On a change to the model, increment the version, move the previous file into `preamble/archive/`, and record what moved in a `changes_from_v*` element. Domains declare what they depend on with a `requires` element.
 
-Version a preamble whenever the model changes, move the old one into its `archive/`, and say in `changes_from_v*` what moved and why.
+## Adding a domain
+
+Copy the layout above under `domains/`, declare `requires` on the core preamble, and define only what is specific to that domain. Core classes are used, never redefined.
