@@ -4,15 +4,52 @@ An ontology expressed as machine-readable XML, a class model, and generated read
 
 Author: Dlozi Lloyd Mthethwa.
 
+## Tech stack
+
+| Layer | Tool |
+|---|---|
+| Source of truth | XML preambles |
+| Model | Java 21 |
+| Build | Gradle (Kotlin DSL), via the wrapper |
+| Diagram | PlantUML |
+| Reader | HTML, CSS and vanilla JavaScript, no framework, no build step |
+
+## Requirements
+
+- JDK 21 or newer (`java -version`, `javac -version`)
+- Nothing else. Gradle arrives through the wrapper.
+
+## Clone and run
+
+```bash
+git clone <repo-url> onto-magic
+cd onto-magic
+./gradlew build
+./gradlew playground
+```
+
+The first run downloads the Gradle distribution the wrapper pins, so it takes a few minutes. After that it is seconds.
+
+If the wrapper is missing, install Gradle once and generate it:
+
+```bash
+sudo snap install gradle --classic   # apt ships a version too old for Kotlin DSL
+gradle wrapper
+```
+
 ## Repository layout
 
 ```
 onto-magic/
 ├── README.md
+├── build.gradle.kts
+├── settings.gradle.kts
 ├── all.puml                          class diagram of the core ontology
+├── src/
+│   ├── main/java/ontomagic/          the ontology
+│   └── playground/java/ontomagic/    throwaway code that exercises it
 ├── core/
-│   ├── onto_magic_preamble.xml       the ontology
-│   └── java/ontomagic/               the ontology as Java, one class per file
+│   └── onto_magic_preamble.xml       the ontology, as source of truth
 ├── domains/
 │   └── <domain>/                     a domain built on the core
 │       ├── README.md
@@ -35,41 +72,35 @@ onto-magic/
 | `Soul` | A Creator. |
 | `HigherSelf` | Rung between Soul and Self. |
 | `Self` | Holds an Allowance, a Field, and reality. |
-| `Belief` | Holds one frequency unchanging. Carries an amplitude. |
-| `Frequency`, `Thought` | What a belief holds, and what reinforces it. |
-| `Allowance` | A set of beliefs: what you are allowed to experience. |
+| `Frequency` | The substrate. Everything is vibration. |
+| `Belief` | Manages frequencies and their amplitude. |
+| `Thought` | Frequencies, appearing as a thought. Reinforces a belief. |
+| `Allowance` | A group of beliefs. Append-only: beliefs are forever. |
 | `Field` | The surface a Reflection lands on. |
-| `Reflection` | An Allowance reflected onto a Field. |
+| `Reflection` | An Allowance reflected onto a Field. Reality. |
 | `Mental` | Mind, consciousness, awareness, thinking, cognition. Placement open. |
 
-Every belief in the Allowance is present at once, weighted by its amplitude, composited like layers. Raising an amplitude changes the proportions, not the contents. Reality holds references rather than copies, so a push, a pop or a reinforcement shows immediately.
+Every belief composites at once, weighted by its amplitude, including the ones at zero. Raising an amplitude changes the proportions, not the contents. Reflection holds references rather than copies, so a change shows immediately.
 
-## Status markers
+## Gradle tasks
 
-Every item in a preamble carries one: `settled`, `open`, `deferred` or `critical`. Open items are not to be filled in by anyone but the author.
+| Task | Does |
+|---|---|
+| `./gradlew build` | Compiles the ontology and the playground. |
+| `./gradlew playground` | Runs `ontomagic.Playground`. |
+| `./gradlew clean` | Deletes `build/`. |
 
-## Usage
+The playground is a separate source set: it can see the ontology, the ontology cannot see it.
 
-The preambles are loaded as context for AI-assisted work, core first, then the domain:
-
-```
-core/onto_magic_preamble.xml
-domains/<domain>/preamble/<domain>_preamble.xml
-```
-
-To read the ontology as a page, open `domains/<domain>/site/*.html` in a browser. It renders the embedded preambles and accepts an updated core or domain XML through the load button.
-
-To draw the class diagram:
+## Diagram
 
 ```bash
 plantuml all.puml
 ```
 
-To compile the model:
+## Status markers
 
-```bash
-javac -d build core/java/ontomagic/*.java
-```
+Every item in a preamble carries one: `settled`, `open`, `deferred` or `critical`. Open items are not to be filled in by anyone but the author.
 
 ## Versioning
 

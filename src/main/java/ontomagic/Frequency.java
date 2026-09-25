@@ -1,8 +1,11 @@
 package ontomagic;
 
 /**
- * One constantly shifts between frequencies.
- * A Belief is what keeps a frequency unchanging.
+ * The substrate. Everything is vibration.
+ *
+ * A thought, a body and emotions are frequencies, or sets of them, at the
+ * noumenal level. Even the smallest things have a few, the way an embedding is
+ * a vector rather than a single number.
  */
 public class Frequency {
 

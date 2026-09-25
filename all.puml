@@ -1,5 +1,5 @@
 @startuml all
-title Onto-Magic: the core ontology (v1.0, 23 September 2026)
+title Onto-Magic: the core ontology (v2.0, 25 September 2026)
 
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -43,7 +43,6 @@ class Self {
   - allowance : Allowance
   + reality : Reflection
   + believe(b : Belief)
-  + drop() : Belief
 }
 
 class Field {
@@ -54,28 +53,40 @@ note bottom of Field
 end note
 
 class Allowance {
-  - beliefs : Deque<Belief>
-  + push(b : Belief)
-  + pop() : Belief
+  - beliefs : List<Belief>
+  + hold(b : Belief)
+  + beliefs() : List<Belief>
   + totalAmplitude() : int
 }
 note bottom of Allowance
-  A set of beliefs: what you
-  are allowed to experience.
+  A group of beliefs.
+  Append-only: beliefs are
+  forever. Nothing is removed.
 end note
 
 class Belief {
-  - frequency : Frequency
+  - frequencies : List<Frequency>
   - amplitude : int
   + reinforce(t : Thought)
+  + quieten()
+  + amplitude(n : int)
 }
 note bottom of Belief
-  Holds one frequency unchanging.
-  Amplitude is energy, not size.
+  Manages frequencies and their
+  amplitude. Amplitude is how much
+  it governs now. Zero is a node
+  on the gradient, not an absence.
 end note
 
 class Frequency
-class Thought
+note bottom of Frequency
+  The substrate. Everything
+  is vibration.
+end note
+
+class Thought {
+  - frequencies : List<Frequency>
+}
 
 class Reflection {
   - field : Field
@@ -83,10 +94,12 @@ class Reflection {
   + shareOf(b : Belief) : double
 }
 note bottom of Reflection
-  All beliefs present at once,
-  weighted by amplitude, composited
-  like layers. Inner being is
-  reflected in reality.
+  Automatic and live. All beliefs
+  present at once, weighted by
+  amplitude, composited like layers,
+  nothing filtered. Inner being is
+  reflected in reality, and reality
+  is what we experience.
 end note
 
 interface Mental <<open>> {
@@ -112,8 +125,9 @@ Self *-- Allowance : holds
 Self *-- Reflection : reality
 Reflection --> Field : reflects onto
 Reflection --> Allowance : reflects
-Allowance o-- Belief : set of
+Allowance o-- Belief : group of
 Belief --> Frequency : holds unchanging
+Thought --> Frequency : is
 Thought ..> Belief : reinforces
 
 @enduml

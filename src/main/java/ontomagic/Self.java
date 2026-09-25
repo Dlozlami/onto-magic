@@ -16,10 +16,6 @@ public class Self extends HigherSelf {
     public final Reflection reality = new Reflection(innerBeing, allowance);
 
     public void believe(Belief belief) {
-        allowance.push(belief);
-    }
-
-    public Belief drop() {
-        return allowance.pop();
+        allowance.hold(belief);
     }
 }

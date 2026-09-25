@@ -13,24 +13,23 @@ public class Playground {
         self.believe(green);
         self.believe(blue);
 
-        show(self, red, green, blue, "each at amplitude 1");
+        show(self, "each at amplitude 1", red, green, blue);
 
         blue.reinforce(new Thought(new Frequency("blue")));
         blue.reinforce(new Thought(new Frequency("blue")));
 
-        show(self, red, green, blue, "blue reinforced twice");
+        show(self, "blue reinforced twice", red, green, blue);
+
+        red.amplitude(0);
+
+        show(self, "red quietened to zero: still held, governing nothing", red, green, blue);
     }
 
-    private static void show(Self self, Belief... beliefs) {
-        System.out.println();
-        for (Belief b : beliefs) {
+    private static void show(Self self, String label, Belief... beliefs) {
+        System.out.println("\n" + label + "\n");
+        for (Belief belief : beliefs) {
             System.out.printf("  %-6s amplitude %d   share %.0f%%%n",
-                b.frequency().name(), b.amplitude(), self.reality.shareOf(b) * 100);
+                belief.frequencies().get(0).name(), belief.amplitude(), self.reality.shareOf(belief) * 100);
         }
-    }
-
-    private static void show(Self self, Belief a, Belief b, Belief c, String label) {
-        System.out.println("\n" + label);
-        show(self, a, b, c);
     }
 }

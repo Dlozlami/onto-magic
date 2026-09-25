@@ -3,12 +3,13 @@ package ontomagic;
 /**
  * An Allowance reflected onto a Field.
  *
- * Every belief is present at once, weighted by its amplitude, like layers
- * composited into one image. Raising a belief's amplitude does not add
- * anything new. It shifts the whole.
+ * Automatic and live, not something done in order to look. Every belief is
+ * present at once, weighted by its amplitude, composited like layers into one
+ * image. Nothing is filtered: beliefs at zero contribute zero, which is a
+ * contribution.
  *
- * Reflection holds references, not copies, so a push, a pop or a
- * reinforcement shows up immediately.
+ * Reflection holds references, not copies, so a change in amplitude shows up
+ * immediately. Reality is a Reflection, and reality is what we experience.
  */
 public class Reflection {
 

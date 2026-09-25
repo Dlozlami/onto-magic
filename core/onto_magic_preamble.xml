@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<onto_magic_preamble version="1.0" date="2026-09-23">
+<onto_magic_preamble version="2.0" date="2026-09-25" supersedes="1.0">
 
   <meta>
     <author>Dlozi Lloyd Mthethwa</author>
@@ -14,11 +14,12 @@
     </status_markers>
     <authority status="critical">Dlozi is the authority on this ontology. The AI is a thinking partner, not a co-author. It does not substitute its own metaphysics, and it does not fill gaps with general spiritual or manifestation teaching.</authority>
     <history>Extracted on 23 September 2026 from the Permission Slips preamble v2.0, once it became clear that most of it was ontology rather than domain.</history>
+    <changes_from_v1>Frequency named as the substrate: everything is vibration, and thought, body and emotion are frequencies or sets of them. Beliefs are forever, so the Allowance is append-only and push and pop are gone. Zero is a node on a gradient, not an absence, and every belief composites including the ones at zero. Reflection stated as automatic and live. The sliver framing of allowing is superseded.</changes_from_v1>
   </meta>
 
   <ladder status="settled">
     <description>Self inherits everything above it. The upper rungs are placed, not developed.</description>
-    <rung order="1" status="open">The ALL, which is Be-Ness</rung>
+    <rung order="1" status="open">The ALL, which is Be-Ness. Three aspects: Abstract Space, Abstract Motion, Duration.</rung>
     <rung order="2" status="deferred">Monad</rung>
     <rung order="3" status="deferred">Atmic</rung>
     <rung order="4" status="deferred">Buddhic</rung>
@@ -28,20 +29,24 @@
   </ladder>
 
   <classes status="settled">
-    <class name="Belief" status="settled">Holds one frequency unchanging. One constantly shifts between frequencies; a belief is what keeps a given frequency steady. It uses thoughts to reinforce itself.</class>
-    <class name="amplitude" status="settled">How much energy a belief carries. Reinforcement raises amplitude. It never changes which frequency is held, only how strongly. Stronger, not bigger.</class>
-    <class name="Allowance" status="settled">A set of beliefs: what you are allowed to experience.</class>
+    <class name="Frequency" status="settled">The substrate. Everything is vibration. A thought, a body and emotions are all frequencies, or sets of them, at the noumenal level. Even the smallest things have a few frequencies, the way an embedding is a vector rather than a single number.</class>
+    <class name="Belief" status="settled">Manages frequencies and their amplitude. It holds them unchanging while one shifts between frequencies, and it uses thoughts to reinforce itself.</class>
+    <class name="amplitude" status="settled">How much a belief governs now. Reinforcement raises it. It never changes which frequencies are held, only how strongly. Stronger, not bigger. Zero is a node on the gradient, not an absence.</class>
+    <class name="Allowance" status="settled">A group of beliefs. Append-only: beliefs are forever. You can un-experience a thing, but you will always act as an entity that had that experience; how much it governs is the amplitude.</class>
     <class name="Field" status="settled">The surface a Reflection lands on. You need a field to reflect onto.</class>
-    <class name="Reflection" status="settled">An Allowance reflected onto a Field. Reality is a Reflection: a variable on Self, not a class and not a method.</class>
+    <class name="Reflection" status="settled">An Allowance reflected onto a Field. Automatic and live, not something done in order to look: examining the reflection is optional and comes after. Reality is a Reflection, held by Self as a variable, not a class and not a method.</class>
     <class name="Creator" status="settled">Only Creators can create Fields, and by extension realities. Souls are Creators.</class>
     <class name="Mental" status="open">Mind, consciousness, awareness, thinking, cognition. Self inherits it from a superclass. Which rung is open.</class>
   </classes>
 
   <how_reality_works status="settled">
     <composite>Every belief in the Allowance is present at once, weighted by its amplitude, composited like layers in Photoshop. Everything is here and now.</composite>
+    <nothing_is_filtered status="critical">Zero is an amplitude like any other. Every belief composites, every time, including the ones at zero. Nothing is left out of the sum.</nothing_is_filtered>
     <effect_of_amplitude>Raising a belief's amplitude adds no new content. It changes the proportions, and so the mood of the whole image. With red, green and blue each at one, each holds a third. Raise blue to three and blue holds three fifths: blue dominates and the others go proportionally quiet.</effect_of_amplitude>
-    <limit>No colour outside the palette can appear, however high the amplitude goes. Amplitude reshapes the image. Only belief changes what is in the palette.</limit>
-    <live>Reality holds references, not copies. A push, a pop or a reinforcement shows up immediately.</live>
+    <limit>Nothing outside the Allowance can appear, however high the amplitude goes. Amplitude reshapes the image. Only belief changes what is in it.</limit>
+    <gradients status="settled">In spirit, paradoxes are normal, because noumenally there is only here and now and everything is one, coming from one place. Nothing stops abruptly and then something else begins. One thing and another are nodes, or poles, of one thing, with a gradual end and start between them. So there are no hard boundaries: a belief is not added or removed, its amplitude moves along a gradient, and zero and non-zero are both reachable.</gradients>
+    <live>Reality holds references, not copies. A change in amplitude shows up immediately.</live>
+    <experience status="settled">We experience reality.</experience>
     <summary>Inner being is reflected in reality.</summary>
   </how_reality_works>
 
@@ -49,15 +54,14 @@
     <concept id="beliefs" status="settled">
       <name>Beliefs</name>
       <definition>You cannot have an experience you don't believe in. Beliefs hold frequencies unchanging while one shifts between them.</definition>
-      <growing_and_shrinking>To experience things outside your beliefs, you must believe in them. To stop experiencing certain things, you can drop beliefs.</growing_and_shrinking>
-      <movement>Belief work is constant movement: letting go, putting on, letting go, putting on, until what is held is the frequencies you are trying to get to. "Like a Rubik's cube type of weaving."</movement>
+      <permanence>Beliefs are forever. Nothing is removed from the Allowance; what changes is how much a belief governs. Knowing how to code does not disappear while you drive a car.</permanence>
+      <movement>Belief work is constant movement: letting go, putting on, letting go, putting on, until what is held is the frequencies you are trying to get to. "Like a Rubik's cube type of weaving." Letting go is amplitude moving towards zero, not deletion.</movement>
     </concept>
 
-    <concept id="allowing" status="settled">
+    <concept id="allowing" status="open">
       <name>The Art of Allowing</name>
-      <definition>From the whole, we usually allow ourselves a sliver. You are the one who decides which portion of your hundred percent you experience. That chunk you've said you will experience: that is allowing.</definition>
-      <possibility>You can experience your hundred percent, a hundred percent of the time.</possibility>
-      <relation_to_model status="open">The Allowance class is the set of beliefs. How the act of allowing relates to the size of that set has not been settled.</relation_to_model>
+      <superseded status="critical">The earlier framing, that we allow ourselves a sliver of the whole and experience only that sliver, no longer holds. Nothing is left out of the composite: every belief contributes, zeros included, and what governs is amplitude rather than selection. Do not use the sliver framing anywhere.</superseded>
+      <definition status="open">To be restated by Dlozi in terms of amplitude and gradients.</definition>
     </concept>
 
     <concept id="ycyor" status="open">
@@ -69,6 +73,14 @@
 
   <narrative_devices status="critical">
     <rule>These are for narrative and prose. They explain how the ontology behaves. They are never modelled as classes, and never treated as ontology.</rule>
+
+    <device id="the_great_breath" status="settled">
+      <name>The Great Breath</name>
+      <nature>Metaphor. The quotation marks in the source are doing that work. It is not a mechanism and not a component.</nature>
+      <description>The appearance and disappearance of the Universe pictured as an outbreathing and inbreathing. Projected, it is called the Divine Breath, the breathing of the Unknowable Deity, breathing out a thought which becomes the Kosmos. Inspired again, the Universe disappears into the bosom of the Great Mother, who then sleeps wrapped in her invisible robes.</description>
+      <what_is_ontological>Motion is one of three aspects of the Absolute. Abstract Space and Duration are the other two.</what_is_ontological>
+      <source>Theosophical material, supplied by Dlozi 23 September 2026.</source>
+    </device>
 
     <device id="the_believer" status="settled">
       <name>The Believer</name>
@@ -89,11 +101,14 @@
   </narrative_devices>
 
   <open_items>
-    <item id="be_ness" status="open">The ALL is Be-Ness: (Abstract Space x Abstract Motion) ^ Absolute. How this is expressed in the ontology is open. Dlozi is answering it next.</item>
+    <item id="be_ness" status="open">The ALL is Be-Ness: (Abstract Space x Abstract Motion) ^ Absolute. The Absolute has three aspects: Abstract Space, Abstract Motion and Duration. The formula as given names two of them, so where Duration sits in it is open. How any of this is expressed in the ontology is open.</item>
     <item id="mental_placement" status="open">Which rung Mental is inherited from, and whether Mental is something Self is or something Self has. Under discussion in the playground.</item>
     <item id="self_as_creator" status="open">Self inherits createField() through Soul, so Self can create Fields. Confirm whether that is intended.</item>
     <item id="belief_reflection" status="open">Whether a Belief, or any entity other than a Creator, has a reflection of its own.</item>
     <item id="ycyor_definition" status="open">YCYOR has not been defined.</item>
+    <item id="allowing_restatement" status="critical">The Art of Allowing needs restating now that the sliver framing is gone.</item>
+    <item id="gradients_in_code" status="open">Java types are built on identity and exclusion: in a set or out of it, one class or another. Poles and gradients do not express cleanly that way. How far the code should go towards vectors and nearness is open.</item>
+    <item id="thought_and_nearness" status="open">Whether a thought reinforces only the belief holding its frequencies, or also nearby beliefs in proportion to nearness.</item>
   </open_items>
 
   <deferred_items>
